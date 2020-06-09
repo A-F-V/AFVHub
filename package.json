@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/A-F-V/AFVHub/issues"
   },
-  "homepage": "https://github.com/A-F-V/AFVHub#readme"
+  "homepage": "https://github.com/A-F-V/AFVHub#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.15"
+  }
 }
