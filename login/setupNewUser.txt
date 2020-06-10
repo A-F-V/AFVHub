@@ -1,0 +1,11 @@
+ssh into root of server
+sudo useradd --create-home -s /bin/bash deploy
+sudo adduser deploy sudo
+sudo passwd deploy
+
+UPDATE PASSWORD
+
+
+mkdir /home/"NAME"/.ssh
+echo "KEY" > /home/"NAME"/.ssh/authorized_keys
+chown -R deploy /home/"NAME"/.ssh
