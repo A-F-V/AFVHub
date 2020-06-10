@@ -2,7 +2,7 @@ const express = require('express');
 const m = require('./mongoServerTest');
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 1611;
 
 const bookRouter = express.Router();
 bookRouter.route('/books').get((req, res) => {
@@ -18,4 +18,3 @@ app.listen(port, () => {
   console.log(`Running on Port ${port}`);
 });
 
-m.main();

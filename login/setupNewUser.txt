@@ -9,3 +9,6 @@ UPDATE PASSWORD
 mkdir /home/"NAME"/.ssh
 echo "KEY" > /home/"NAME"/.ssh/authorized_keys
 chown -R deploy /home/"NAME"/.ssh
+
+
+//DONT FORGET TO DO ssh-add ~/.ssh/afvhub
