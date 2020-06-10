@@ -2,7 +2,7 @@ const express = require('express');
 const m = require('./mongoServerTest');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 const bookRouter = express.Router();
 bookRouter.route('/books').get((req, res) => {
