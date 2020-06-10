@@ -20,6 +20,7 @@
   "homepage": "https://github.com/A-F-V/AFVHub#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mongodb": "^3.5.8",
     "nodemon": "^2.0.4"
   },
   "devDependencies": {
