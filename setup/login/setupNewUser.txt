@@ -6,9 +6,9 @@ sudo passwd deploy
 UPDATE PASSWORD
 
 
-mkdir /home/"NAME"/.ssh
-echo "KEY" > /home/"NAME"/.ssh/authorized_keys
-chown -R deploy /home/"NAME"/.ssh
+mkdir /home/deploy/.ssh
+echo "KEY" > /home/deploy/.ssh/authorized_keys
+chown -R deploy /home/deploy/.ssh
 
 
 //DONT FORGET TO DO ssh-add ~/.ssh/afvhub
