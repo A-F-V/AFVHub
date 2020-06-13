@@ -1,9 +1,13 @@
 const express = require('express');
-const m = require('./mongoServerTest');
+const cluster = require('cluster');
+const child_process = require('child_process');
+
+const microservice = child_process.fork(`${__dirname}/microservices/microservice`);
+const microservice2 = child_process.fork(`${__dirname}/microservices/microservice`);
 
 const app = express();
 const port = process.env.PORT || 1611;
-
+/*
 const bookRouter = express.Router();
 bookRouter.route('/books').get((req, res) => {
   const response = { hello: 'This is my API' };
@@ -17,3 +21,4 @@ app.use('/api', bookRouter);
 app.listen(port, () => {
   console.log(`Running on Port ${port}`);
 });
+*/

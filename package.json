@@ -5,8 +5,10 @@
   "main": "app.js",
   "scripts": {
     "lint": "eslint . --fix",
-    "start": "nodemon bin/app.js",
-    "test": "mocha || true"
+    "start": "nodemon bin/www.js",
+    "test": "mocha || true",
+    "log_into_server": "ssh deploy@167.99.194.251",
+    "deploy": "ssh deploy@167.99.194.251 'cd AFVHub;git pull'"
   },
   "repository": {
     "type": "git",

@@ -11,5 +11,8 @@ module.exports = {
     ecmaVersion: 11,
   },
   rules: {
+    'no-console': 'off',
+    'class-methods-use-this': 'off',
+    'no-plusplus':'off'
   },
 };

@@ -11,4 +11,7 @@ echo "KEY" > /home/deploy/.ssh/authorized_keys
 chown -R deploy /home/deploy/.ssh
 
 
-//DONT FORGET TO DO ssh-add ~/.ssh/afvhub
+//DONT FORGET TO DO ssh-add ~/.ssh/id_rsa_afvgithub
+
+//https://stackoverflow.com/questions/3466626/how-to-permanently-add-a-private-key-with-ssh-add-on-ubuntu
+//RENAME TO .ssh/id_rsa_afvgithub
