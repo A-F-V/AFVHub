@@ -12,4 +12,4 @@ class FileGrabber {
   }
 }
 
-module.exports = new FileGrabber();
+module.exports = FileGrabber;

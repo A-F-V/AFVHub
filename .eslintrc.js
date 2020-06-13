@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'class-methods-use-this': 'off',
-    'no-plusplus':'off'
+    'no-plusplus':'off',
+    'camelcase':'off'
   },
 };
