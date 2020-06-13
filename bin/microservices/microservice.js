@@ -3,8 +3,8 @@ const os = require('os');
 
 function start(service) {
   if (cluster.isMaster) {
-    console.log('YES');
     const clusters = os.cpus().length;
+    console.log(`Using ${clusters} clusters.`);
     cluster.setupMaster({ exec: service });
     for (let i = 0; i < clusters; i++) {
       cluster.fork();

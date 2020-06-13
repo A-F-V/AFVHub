@@ -1,9 +1,8 @@
 const express = require('express');
 const cluster = require('cluster');
 const child_process = require('child_process');
+const msm = require('./microservices/msm');
 
-const microservice = child_process.fork(`${__dirname}/microservices/microservice`);
-const microservice2 = child_process.fork(`${__dirname}/microservices/microservice`);
 
 const app = express();
 const port = process.env.PORT || 1611;

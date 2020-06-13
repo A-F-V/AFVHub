@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint . --fix",
     "start": "nodemon bin/www.js",
-    "test": "mocha || true",
+    "test": "mocha 'test/**/*.js' || true",
     "log_into_server": "ssh deploy@167.99.194.251",
     "deploy": "ssh deploy@167.99.194.251 'cd AFVHub;git pull'"
   },
